@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--HospitalsVC-->
+        <scene sceneID="xeG-2l-hrb">
+            <objects>
+                <viewController storyboardIdentifier="HospitalsVC" id="Rx3-yz-ur4" customClass="HospitalsVC" customModule="CoGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qvb-Js-PwD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJ3-9B-gmt">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05i-cu-WHi">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="426.66666666666669"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="17k-5j-RsM">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="426.66666666666669"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Fk-Qm-DDd">
+                                                        <rect key="frame" x="19.666666666666657" y="0.0" width="353.66666666666674" height="206.66666666666666"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="around-hospitals" translatesAutoresizingMaskIntoConstraints="NO" id="gxd-li-ajJ">
+                                                                <rect key="frame" x="107.99999999999999" y="0.0" width="137.66666666666663" height="137.66666666666666"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="gxd-li-ajJ" secondAttribute="height" id="Vnl-tE-maH"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xvS-6x-9ip">
+                                                                <rect key="frame" x="0.0" y="147.66666666666666" width="353.66666666666669" height="59"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearby Hospitals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PaX-YJ-99X">
+                                                                        <rect key="frame" x="107" y="0.0" width="140" height="19.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                                                        <color key="textColor" name="darkGreen"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S3F-Jj-Llx">
+                                                                        <rect key="frame" x="36.666666666666657" y="24.666666666666689" width="280.66666666666674" height="34.333333333333343"/>
+                                                                        <string key="text">List of nearby hospitals along with their
+location and Covid-19 cases</string>
+                                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Pho-eP-CVt">
+                                                        <rect key="frame" x="0.0" y="226.66666666666669" width="393" height="200"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="200" id="BZS-bX-kve"/>
+                                                        </constraints>
+                                                    </tableView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Pho-eP-CVt" firstAttribute="leading" secondItem="17k-5j-RsM" secondAttribute="leading" id="JOf-oe-wMq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Pho-eP-CVt" secondAttribute="trailing" id="O2u-sS-ZYX"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="17k-5j-RsM" firstAttribute="top" secondItem="05i-cu-WHi" secondAttribute="top" id="1Ao-Nr-21F"/>
+                                            <constraint firstAttribute="trailing" secondItem="17k-5j-RsM" secondAttribute="trailing" id="9S4-vm-wtx"/>
+                                            <constraint firstItem="17k-5j-RsM" firstAttribute="leading" secondItem="05i-cu-WHi" secondAttribute="leading" id="GQs-0j-iXe"/>
+                                            <constraint firstAttribute="bottom" secondItem="17k-5j-RsM" secondAttribute="bottom" id="dov-aa-rKQ"/>
+                                            <constraint firstItem="xvS-6x-9ip" firstAttribute="width" secondItem="05i-cu-WHi" secondAttribute="width" multiplier="0.9" id="vCD-LE-OGU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="05i-cu-WHi" secondAttribute="bottom" id="0bd-Bd-TZf"/>
+                                    <constraint firstItem="05i-cu-WHi" firstAttribute="leading" secondItem="CJ3-9B-gmt" secondAttribute="leading" id="GAd-gW-hRg"/>
+                                    <constraint firstItem="05i-cu-WHi" firstAttribute="top" secondItem="CJ3-9B-gmt" secondAttribute="top" id="LTg-KH-KqA"/>
+                                    <constraint firstItem="05i-cu-WHi" firstAttribute="width" secondItem="CJ3-9B-gmt" secondAttribute="width" id="c8s-qz-Zfz"/>
+                                    <constraint firstAttribute="trailing" secondItem="05i-cu-WHi" secondAttribute="trailing" id="mO4-7d-7MB"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1U7-Z0-zAU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CJ3-9B-gmt" firstAttribute="leading" secondItem="1U7-Z0-zAU" secondAttribute="leading" id="3k6-St-4hK"/>
+                            <constraint firstItem="CJ3-9B-gmt" firstAttribute="top" secondItem="1U7-Z0-zAU" secondAttribute="top" id="LGo-65-brp"/>
+                            <constraint firstItem="Pho-eP-CVt" firstAttribute="width" secondItem="qvb-Js-PwD" secondAttribute="width" id="RmP-HY-Hmi"/>
+                            <constraint firstAttribute="bottom" secondItem="CJ3-9B-gmt" secondAttribute="bottom" id="eFu-fN-jiT"/>
+                            <constraint firstItem="gxd-li-ajJ" firstAttribute="width" secondItem="qvb-Js-PwD" secondAttribute="width" multiplier="0.35" id="kM2-1y-fn6"/>
+                            <constraint firstItem="1U7-Z0-zAU" firstAttribute="trailing" secondItem="CJ3-9B-gmt" secondAttribute="trailing" id="rrQ-Yn-cNs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="154-V5-6Hj"/>
+                    <connections>
+                        <outlet property="hospitalsTableView" destination="Pho-eP-CVt" id="PSv-8U-mzK"/>
+                        <outlet property="tableViewHeight" destination="BZS-bX-kve" id="B6v-bx-QEc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYr-sZ-GF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.20930232558135" y="4.5064377682403434"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="around-hospitals" width="1500" height="1500"/>
+        <namedColor name="darkGreen">
+            <color red="0.11800000071525574" green="0.31799998879432678" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

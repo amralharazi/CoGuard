@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5lS-LD-MXu">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--AlertVC-->
+        <scene sceneID="VkQ-d2-GOG">
+            <objects>
+                <viewController storyboardIdentifier="AlertVC" id="5lS-LD-MXu" customClass="AlertVC" customModule="CoGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G1W-Lg-BUR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpF-6b-lce">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUU-kg-skt" customClass="RoundedView" customModule="CoGuard" customModuleProvider="target">
+                                <rect key="frame" x="39.333333333333343" y="352.66666666666669" width="314.33333333333326" height="146.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alert" translatesAutoresizingMaskIntoConstraints="NO" id="Pfw-55-SiG" customClass="RoundedIV" customModule="CoGuard" customModuleProvider="target">
+                                        <rect key="frame" x="17.666666666666664" y="-30" width="58.999999999999993" height="58.666666666666664"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Pfw-55-SiG" secondAttribute="height" id="nnK-ea-oR7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CiN-d3-SLy">
+                                        <rect key="frame" x="20" y="28.666666666666629" width="274.33333333333331" height="98"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="22k-h9-rYd">
+                                                <rect key="frame" x="0.0" y="0.0" width="274.33333333333331" height="42"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abN-vM-57v">
+                                                        <rect key="frame" x="0.0" y="0.0" width="274.33333333333331" height="17.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPt-k5-IgY">
+                                                        <rect key="frame" x="0.0" y="27.333333333333375" width="274.33333333333331" height="14.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lvp-Tp-M1G">
+                                                <rect key="frame" x="0.0" y="62" width="274.33333333333331" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW4-xE-xO8" customClass="RoundedBtn" customModule="CoGuard" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="129.33333333333334" height="36"/>
+                                                        <color key="backgroundColor" name="darkGreen"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Yes"/>
+                                                        <connections>
+                                                            <action selector="btnPressed:" destination="5lS-LD-MXu" eventType="touchUpInside" id="ZB6-6n-y4O"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6N-PQ-3fn" customClass="RoundedBtn" customModule="CoGuard" customModuleProvider="target">
+                                                        <rect key="frame" x="145.33333333333331" y="0.0" width="129" height="36"/>
+                                                        <color key="backgroundColor" name="dangerRed"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="No"/>
+                                                        <connections>
+                                                            <action selector="btnPressed:" destination="5lS-LD-MXu" eventType="touchUpInside" id="YX6-6B-bEj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="zpf-et-Mtt"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="CiN-d3-SLy" firstAttribute="leading" secondItem="sUU-kg-skt" secondAttribute="leading" constant="20" id="EWx-hb-v1w"/>
+                                    <constraint firstItem="Pfw-55-SiG" firstAttribute="top" secondItem="sUU-kg-skt" secondAttribute="top" constant="-30" id="LrJ-fB-g2K"/>
+                                    <constraint firstAttribute="trailing" secondItem="CiN-d3-SLy" secondAttribute="trailing" constant="20" id="aPN-0C-w8T"/>
+                                    <constraint firstItem="CiN-d3-SLy" firstAttribute="top" secondItem="Pfw-55-SiG" secondAttribute="bottom" id="gsd-6z-Lbj"/>
+                                    <constraint firstItem="Pfw-55-SiG" firstAttribute="centerX" secondItem="sUU-kg-skt" secondAttribute="centerX" multiplier="0.3" id="pzH-Od-JX3"/>
+                                    <constraint firstAttribute="bottom" secondItem="CiN-d3-SLy" secondAttribute="bottom" constant="20" id="tsp-p8-x83"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HNo-5H-KOo"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GpF-6b-lce" firstAttribute="top" secondItem="G1W-Lg-BUR" secondAttribute="top" id="4yy-8h-L18"/>
+                            <constraint firstItem="sUU-kg-skt" firstAttribute="width" secondItem="G1W-Lg-BUR" secondAttribute="width" multiplier="0.8" id="7gH-mT-RsK"/>
+                            <constraint firstItem="Pfw-55-SiG" firstAttribute="width" secondItem="G1W-Lg-BUR" secondAttribute="width" multiplier="0.15" id="Eo3-HI-b4q"/>
+                            <constraint firstItem="sUU-kg-skt" firstAttribute="centerY" secondItem="G1W-Lg-BUR" secondAttribute="centerY" id="aWj-Uu-IM9"/>
+                            <constraint firstAttribute="bottom" secondItem="GpF-6b-lce" secondAttribute="bottom" id="cwj-Fc-F08"/>
+                            <constraint firstItem="GpF-6b-lce" firstAttribute="trailing" secondItem="HNo-5H-KOo" secondAttribute="trailing" id="dGp-pJ-MXD"/>
+                            <constraint firstItem="sUU-kg-skt" firstAttribute="centerX" secondItem="G1W-Lg-BUR" secondAttribute="centerX" id="snZ-iY-ghi"/>
+                            <constraint firstItem="GpF-6b-lce" firstAttribute="leading" secondItem="HNo-5H-KOo" secondAttribute="leading" id="u0C-ow-PML"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="noBtn" destination="i6N-PQ-3fn" id="tBm-81-b0m"/>
+                        <outlet property="photoIV" destination="Pfw-55-SiG" id="3U5-C2-McE"/>
+                        <outlet property="subtitleLbl" destination="bPt-k5-IgY" id="oVX-kL-Ewp"/>
+                        <outlet property="titleLbl" destination="abN-vM-57v" id="H76-aT-aBY"/>
+                        <outlet property="transparentView" destination="GpF-6b-lce" id="sdc-7l-dlD"/>
+                        <outlet property="yesBtn" destination="wW4-xE-xO8" id="Z0S-ks-uRS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cng-AY-Asx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1209.9236641221373" y="2589.4366197183099"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="wW4-xE-xO8">
+            <size key="intrinsicContentSize" width="29" height="42"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="alert" width="750" height="750"/>
+        <namedColor name="dangerRed">
+            <color red="0.67799997329711914" green="0.17299999296665192" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="darkGreen">
+            <color red="0.11800000071525574" green="0.31799998879432678" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

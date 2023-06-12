@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5jj-Vx-yLj">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Travel InfoVC-->
+        <scene sceneID="GQB-3j-P2i">
+            <objects>
+                <viewController storyboardIdentifier="TravelInfoVC" id="5jj-Vx-yLj" customClass="TravelInfoVC" customModule="CoGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m6v-4H-aKv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PL4-xH-LQD">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="us9-cM-LYB">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="489"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="epv-bJ-WQt">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="489"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Zl-Cn-J8w">
+                                                        <rect key="frame" x="19.666666666666657" y="0.0" width="353.66666666666674" height="206.66666666666666"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="gvA-yp-ocp">
+                                                                <rect key="frame" x="107.99999999999999" y="0.0" width="137.66666666666663" height="137.66666666666666"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="gvA-yp-ocp" secondAttribute="height" id="3RW-hi-x1t"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ctu-yb-Ry7">
+                                                                <rect key="frame" x="0.0" y="147.66666666666666" width="353.66666666666669" height="59"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YgE-gt-oln">
+                                                                        <rect key="frame" x="134" y="0.0" width="86" height="19.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                                                        <color key="textColor" name="darkGreen"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-iK-zS6">
+                                                                        <rect key="frame" x="60.333333333333329" y="24.666666666666689" width="233.33333333333337" height="34.333333333333343"/>
+                                                                        <string key="text">Please enter your travel info and 
+update it regularly</string>
+                                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VuM-Z9-VVh">
+                                                        <rect key="frame" x="0.0" y="226.66666666666669" width="393" height="200"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="200" id="l7D-94-QQB"/>
+                                                        </constraints>
+                                                    </tableView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xl-9l-oqG" customClass="AdjustableButton" customModule="CoGuard" customModuleProvider="target">
+                                                        <rect key="frame" x="19.666666666666657" y="446.66666666666669" width="353.66666666666674" height="42.333333333333314"/>
+                                                        <color key="backgroundColor" name="oliveGreen"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Update"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundClr">
+                                                                <color key="value" name="oliveGreen"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textSize">
+                                                                <integer key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boldText" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="updateBtnPressed:" destination="5jj-Vx-yLj" eventType="touchUpInside" id="pi6-7a-KwO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="VuM-Z9-VVh" secondAttribute="trailing" id="RXX-RB-vJ1"/>
+                                                    <constraint firstItem="VuM-Z9-VVh" firstAttribute="leading" secondItem="epv-bJ-WQt" secondAttribute="leading" id="RmE-Qo-ZZq"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="epv-bJ-WQt" firstAttribute="leading" secondItem="us9-cM-LYB" secondAttribute="leading" id="484-6F-VlG"/>
+                                            <constraint firstItem="epv-bJ-WQt" firstAttribute="top" secondItem="us9-cM-LYB" secondAttribute="top" id="FUz-MT-rwr"/>
+                                            <constraint firstAttribute="bottom" secondItem="epv-bJ-WQt" secondAttribute="bottom" id="a87-bd-Pdi"/>
+                                            <constraint firstAttribute="trailing" secondItem="epv-bJ-WQt" secondAttribute="trailing" id="bfN-0e-nGQ"/>
+                                            <constraint firstItem="Ctu-yb-Ry7" firstAttribute="width" secondItem="us9-cM-LYB" secondAttribute="width" multiplier="0.9" id="cGW-la-2km"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="us9-cM-LYB" firstAttribute="width" secondItem="PL4-xH-LQD" secondAttribute="width" id="3kY-9f-lIG"/>
+                                    <constraint firstItem="us9-cM-LYB" firstAttribute="top" secondItem="PL4-xH-LQD" secondAttribute="top" id="AN1-Op-0HM"/>
+                                    <constraint firstItem="us9-cM-LYB" firstAttribute="leading" secondItem="PL4-xH-LQD" secondAttribute="leading" id="gcw-fg-DKD"/>
+                                    <constraint firstAttribute="trailing" secondItem="us9-cM-LYB" secondAttribute="trailing" id="pQ6-7f-Ky2"/>
+                                    <constraint firstAttribute="bottom" secondItem="us9-cM-LYB" secondAttribute="bottom" id="y2f-3f-RPp"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TNq-WV-2Yk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Xl-9l-oqG" firstAttribute="width" secondItem="m6v-4H-aKv" secondAttribute="width" multiplier="0.9" id="6Tp-Pp-pRc"/>
+                            <constraint firstItem="PL4-xH-LQD" firstAttribute="top" secondItem="TNq-WV-2Yk" secondAttribute="top" id="Dpy-xU-8gz"/>
+                            <constraint firstItem="TNq-WV-2Yk" firstAttribute="trailing" secondItem="PL4-xH-LQD" secondAttribute="trailing" id="Itg-gu-YNT"/>
+                            <constraint firstItem="PL4-xH-LQD" firstAttribute="leading" secondItem="TNq-WV-2Yk" secondAttribute="leading" id="Ork-74-kDh"/>
+                            <constraint firstItem="VuM-Z9-VVh" firstAttribute="width" secondItem="m6v-4H-aKv" secondAttribute="width" id="RzM-AJ-KNA"/>
+                            <constraint firstItem="gvA-yp-ocp" firstAttribute="width" secondItem="m6v-4H-aKv" secondAttribute="width" multiplier="0.35" id="TON-h6-1Gi"/>
+                            <constraint firstAttribute="bottom" secondItem="PL4-xH-LQD" secondAttribute="bottom" id="dfe-vN-tvX"/>
+                            <constraint firstItem="9Xl-9l-oqG" firstAttribute="height" secondItem="m6v-4H-aKv" secondAttribute="height" multiplier="0.05" id="sJP-uH-9Mv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bXq-gg-mOl"/>
+                    <connections>
+                        <outlet property="infoTableView" destination="VuM-Z9-VVh" id="f9I-rj-Ieo"/>
+                        <outlet property="subtitleLbl" destination="HhK-iK-zS6" id="fkO-OF-isz"/>
+                        <outlet property="tableViewHeight" destination="l7D-94-QQB" id="78N-UI-jkk"/>
+                        <outlet property="updateBtn" destination="9Xl-9l-oqG" id="f3b-2q-s13"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4B-1l-mXo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.20930232558135" y="4.5064377682403434"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="9Xl-9l-oqG">
+            <size key="intrinsicContentSize" width="60" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="travel" width="1500" height="1500"/>
+        <namedColor name="darkGreen">
+            <color red="0.11800000071525574" green="0.31799998879432678" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="oliveGreen">
+            <color red="0.53700000047683716" green="0.6589999794960022" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

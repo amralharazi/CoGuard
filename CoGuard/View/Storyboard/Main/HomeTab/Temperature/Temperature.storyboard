@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3RR-2k-DMM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--TemperatureVC-->
+        <scene sceneID="8b2-Nv-utd">
+            <objects>
+                <viewController storyboardIdentifier="TemperatureVC" id="3RR-2k-DMM" customClass="TemperatureVC" customModule="CoGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PSv-Eu-1ad">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="09W-Ph-TOt">
+                                <rect key="frame" x="19.666666666666657" y="68.999999999999986" width="353.66666666666674" height="189.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temperature" translatesAutoresizingMaskIntoConstraints="NO" id="xvK-i8-Ytg">
+                                        <rect key="frame" x="107.99999999999999" y="0.0" width="137.66666666666663" height="137.66666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xvK-i8-Ytg" secondAttribute="height" id="qST-1a-YBy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="O6g-Ai-UyM">
+                                        <rect key="frame" x="48.333333333333343" y="147.66666666666666" width="257.33333333333326" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="55W-Of-CUO">
+                                                <rect key="frame" x="51.333333333333329" y="0.0" width="154.33333333333337" height="19.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                                <color key="textColor" name="darkGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your body temperature" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FaS-pY-SBJ">
+                                                <rect key="frame" x="0.0" y="24.666666666666686" width="257.33333333333331" height="17.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vvg-ee-p9Z">
+                                <rect key="frame" x="19.666666666666657" y="278.66666666666674" width="353.66666666666674" height="347.33333333333326"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCO-zK-TS7" customClass="ThermometerView" customModule="CoGuard" customModuleProvider="target">
+                                        <rect key="frame" x="131.66666666666669" y="0.0" width="90.333333333333314" height="255.33333333333334"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Hr7-5u-8dW">
+                                        <rect key="frame" x="0.0" y="255.33333333333331" width="353.66666666666669" height="92"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="37.0 ℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7w-y6-Tug">
+                                                <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="29.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                                                <color key="textColor" name="darkGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfR-53-X9F" customClass="AdjustableButton" customModule="CoGuard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="49.333333333333371" width="353.66666666666669" height="42.666666666666657"/>
+                                                <color key="backgroundColor" name="oliveGreen"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundClr">
+                                                        <color key="value" name="oliveGreen"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textSize">
+                                                        <integer key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boldText" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nextBtnPressed:" destination="3RR-2k-DMM" eventType="touchUpInside" id="XYR-yN-6fJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cPI-5c-I8T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uCO-zK-TS7" firstAttribute="height" secondItem="PSv-Eu-1ad" secondAttribute="height" multiplier="0.3" id="4jb-VQ-09R"/>
+                            <constraint firstItem="09W-Ph-TOt" firstAttribute="width" secondItem="PSv-Eu-1ad" secondAttribute="width" multiplier="0.9" id="Gkj-aL-hNV"/>
+                            <constraint firstItem="09W-Ph-TOt" firstAttribute="centerX" secondItem="PSv-Eu-1ad" secondAttribute="centerX" id="NSZ-ri-xlB"/>
+                            <constraint firstItem="Hr7-5u-8dW" firstAttribute="width" secondItem="PSv-Eu-1ad" secondAttribute="width" multiplier="0.9" id="caR-6A-Oxz"/>
+                            <constraint firstItem="vvg-ee-p9Z" firstAttribute="centerX" secondItem="PSv-Eu-1ad" secondAttribute="centerX" id="eHh-P0-hsI"/>
+                            <constraint firstItem="uCO-zK-TS7" firstAttribute="width" secondItem="PSv-Eu-1ad" secondAttribute="width" multiplier="0.23" id="k9E-Um-kUS"/>
+                            <constraint firstItem="09W-Ph-TOt" firstAttribute="top" secondItem="cPI-5c-I8T" secondAttribute="top" constant="10" id="kz2-zy-OZ5"/>
+                            <constraint firstItem="vvg-ee-p9Z" firstAttribute="top" secondItem="09W-Ph-TOt" secondAttribute="bottom" constant="20" id="omP-ft-kEG"/>
+                            <constraint firstItem="xvK-i8-Ytg" firstAttribute="width" secondItem="PSv-Eu-1ad" secondAttribute="width" multiplier="0.35" id="rQO-y6-o6U"/>
+                            <constraint firstItem="nfR-53-X9F" firstAttribute="height" secondItem="PSv-Eu-1ad" secondAttribute="height" multiplier="0.05" id="xng-Iq-mbc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aRg-En-A2T"/>
+                    <connections>
+                        <outlet property="tempLbl" destination="Z7w-y6-Tug" id="QQU-XR-now"/>
+                        <outlet property="thermometerView" destination="uCO-zK-TS7" id="a1i-5F-J22"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LBc-QJ-f5H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835.87786259541986" y="4.2253521126760569"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="nfR-53-X9F">
+            <size key="intrinsicContentSize" width="38" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="temperature" width="1500" height="1500"/>
+        <namedColor name="darkGreen">
+            <color red="0.11800000071525574" green="0.31799998879432678" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="oliveGreen">
+            <color red="0.53700000047683716" green="0.6589999794960022" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

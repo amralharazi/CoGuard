@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DoctorCell" rowHeight="230" id="KGk-i7-Jjw" customClass="DoctorCell" customModule="CoGuard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="865" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="865" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kq-cR-mZY" customClass="ShadowedView" customModule="CoGuard" customModuleProvider="target">
+                        <rect key="frame" x="43.333333333333314" y="5" width="778.33333333333348" height="220"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VZy-nb-R3N">
+                                <rect key="frame" x="10" y="15" width="758.33333333333337" height="190"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="14a81424f6c8-martin-compston-dramas-t" translatesAutoresizingMaskIntoConstraints="NO" id="W2E-GW-Ixp" customClass="RoundedIV" customModule="CoGuard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="30" width="129.66666666666666" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="W2E-GW-Ixp" secondAttribute="height" id="fr2-B3-yMj"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBordered" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kGP-zR-vSc">
+                                        <rect key="frame" x="139.66666666666669" y="65.666666666666671" width="618.66666666666652" height="58.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading ..." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6yw-Bq-Edb">
+                                                <rect key="frame" x="0.0" y="0.0" width="73" height="17.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="IhJ-3I-wIW">
+                                                <rect key="frame" x="0.0" y="27.333333333333329" width="61.333333333333336" height="31.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading ..." lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gae-Bo-HUg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="14.666666666666666"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading ..." lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6e2-M0-UlD">
+                                                        <rect key="frame" x="0.0" y="16.666666666666657" width="61.333333333333336" height="14.666666666666664"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="darkGreen"/>
+                        <constraints>
+                            <constraint firstItem="VZy-nb-R3N" firstAttribute="top" secondItem="5kq-cR-mZY" secondAttribute="top" constant="15" id="RHc-KM-gCw"/>
+                            <constraint firstItem="VZy-nb-R3N" firstAttribute="leading" secondItem="5kq-cR-mZY" secondAttribute="leading" constant="10" id="csi-rq-Df6"/>
+                            <constraint firstAttribute="trailing" secondItem="VZy-nb-R3N" secondAttribute="trailing" constant="10" id="fTl-9C-9Gk"/>
+                            <constraint firstAttribute="bottom" secondItem="VZy-nb-R3N" secondAttribute="bottom" constant="15" id="mTU-3x-dqg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5kq-cR-mZY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="0N3-1F-rov"/>
+                    <constraint firstAttribute="bottom" secondItem="5kq-cR-mZY" secondAttribute="bottom" constant="5" id="C9T-5r-a1P"/>
+                    <constraint firstItem="5kq-cR-mZY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WRr-lG-UQq"/>
+                    <constraint firstItem="W2E-GW-Ixp" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.15" id="m2u-4r-0SK"/>
+                    <constraint firstItem="5kq-cR-mZY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uSl-s6-oco"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5kq-cR-mZY" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.9" id="nrT-rQ-xdq"/>
+            </constraints>
+            <connections>
+                <outlet property="hospitalLbl" destination="Gae-Bo-HUg" id="kNl-5A-Bob"/>
+                <outlet property="nameLbl" destination="6yw-Bq-Edb" id="UyD-ex-lHf"/>
+                <outlet property="photoIV" destination="W2E-GW-Ixp" id="WEf-WG-IFV"/>
+                <outlet property="specialityLbl" destination="6e2-M0-UlD" id="xcX-FD-Ttv"/>
+            </connections>
+            <point key="canvasLocation" x="-260.30534351145036" y="126.05633802816902"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="W2E-GW-Ixp">
+            <size key="intrinsicContentSize" width="1920" height="1080"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="14a81424f6c8-martin-compston-dramas-t" width="1920" height="1080"/>
+        <namedColor name="darkGreen">
+            <color red="0.11800000071525574" green="0.31799998879432678" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
